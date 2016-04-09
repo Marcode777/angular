@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="RoutingApp">
+<head>
+<meta char-set="utf-8">
+    <title>ANGULAR PRACTICE ROUTING!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <h1>This is my Angular Practice Routing App!</h1>
+    <p> 
+    Jump to <a href="#first"> first page</a> or the  <a href="#second"> second page</a>
+    </p>
+  <ng-view></ng-view>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular-route.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
+
+<!--remember to include angular first before any angular modules so they can be read properly. Here we have angular, then angular route, which is injected in the app.js angular.module array as ngRoute, this is called dependency injection, then our own app.js-->
+<!--ng-view tells angular to load whatever is in app.js and place it here (or wherever you put ng-view)-->
+<!-- keep in mind, none of this is server-side, this is all angular-->
+<!-- but remember to run node server.js in order to access it -->
